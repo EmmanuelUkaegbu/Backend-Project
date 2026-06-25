@@ -42,7 +42,10 @@ exports.getAllProduct = async (req, res) => {
       sucess: true,
       message: "products Retrived Successful",
       count: products.length,
-      product,
+      products: {
+        data: products,
+        total: products.length,
+      },
     });
   } catch (error) {
     res.status(500).json({
