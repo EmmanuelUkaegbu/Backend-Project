@@ -8,6 +8,7 @@ const cors = require("cors");
 const PORT = process.env.PORT || 5000;
 const productRoute = require("./route/product.route.js");
 const userRoute = require("./route/user.route.js");
+
 app.use(
   cors({
     origin: "http://localhost:5173",
